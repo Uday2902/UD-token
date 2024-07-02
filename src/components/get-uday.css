@@ -1,0 +1,27 @@
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    width: 50%;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ffffff; /* Change the color as needed */
+  }
+  
+  .divider:not(:empty)::before {
+    margin-right: 1rem;
+  }
+  
+  .divider:not(:empty)::after {
+    margin-left: 1rem;
+  }
+  
+  .tokens-input{
+    margin-top: 20px;
+  }

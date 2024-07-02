@@ -1,0 +1,141 @@
+#root {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.connect-wallet {
+  height: 10%;
+  text-align: center;
+  width: 25%;
+  margin-bottom: 1rem;
+}
+
+.container {
+  height: 65vh;
+  width: 640px;
+  background-color: rgba(56, 55, 55, 0.575);
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar {
+  /* border: 1px solid red; */
+  height: 10vh;
+  width: 640px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar button {
+  height: 80%;
+  text-align: center;
+  width: 30%;
+}
+
+.get-uday {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  width: 70%;
+  height: 2rem;
+  font-family: inherit;
+  transition: border-color 0.25s;
+}
+
+.get-uday button {
+  height: 3rem;
+}
+
+.connect-wallet-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2.3rem;
+  opacity: 0.5;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.entries {
+  margin: 1rem;
+  overflow: scroll;
+  height: 30vh;
+  font-weight: 600;
+}
+
+.text-detail {
+  padding: 0.4rem;
+  font-size: 1.1rem;
+  margin-bottom: -0.7rem;
+}
+
+span {
+  padding: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.all-transactions {
+  margin: 1rem;
+  overflow: scroll;
+  height: 40vh;
+  font-weight: 600;
+}
+
+/* Tablet view adjustments */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container,
+  .navbar {
+    width: 80%; /* Adjust width for tablets */
+  }
+
+  .navbar button {
+    width: 25%; /* Adjust button width for better fit */
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+  .container,
+  .navbar {
+    width: 95%; /* Full width for mobiles */
+  }
+
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Adjust height for vertical stacking */
+  }
+
+  .navbar button {
+    width: 80%; /* Buttons take more width */
+    margin-bottom: 5px; /* Add space between buttons */
+  }
+}
