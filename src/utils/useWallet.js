@@ -22,15 +22,6 @@ export const useWallet = () => {
                 const contract = new ethers.Contract(contractAddress, contractABI, newSigner);
                 const network = await provider.getNetwork();
                 
-                console.log("Contract address -> ", contractAddress);
-                console.log("Provider -> ", provider);
-                console.log("newSigner -> ", newSigner);
-                console.log("Contract -> ", contract);
-                console.log("network -> ", network);
-
-
-
-
                 if (network.name !== "sepolia") {
                     alert("Please connect to Sepolia Test network");
                     return;
