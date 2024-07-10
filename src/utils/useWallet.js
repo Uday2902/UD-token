@@ -21,7 +21,8 @@ export const useWallet = () => {
                 const newSigner = await provider.getSigner();
                 const contract = new ethers.Contract(contractAddress, contractABI, newSigner);
                 const network = await provider.getNetwork();
-
+                
+                console.log("Contract address -> ", contractAddress);
                 console.log("Provider -> ", provider);
                 console.log("newSigner -> ", newSigner);
                 console.log("Contract -> ", contract);
