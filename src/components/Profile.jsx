@@ -104,7 +104,7 @@ const Profile = () => {
       <ToastContainer />
       {isMetaMaskConnected ? (
         <div className="profile">
-          <div className="title">You have {myTokens} UDAY tokens</div>
+          <div className="title">You have {myTokens} UD tokens</div>
           <div
             className="send-uday"
             style={{
