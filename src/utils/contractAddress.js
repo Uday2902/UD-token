@@ -1,4 +1,4 @@
-const contractAddress = `${process.env.REACT_APP_CONTRACT_ADDRESS}`
-console.log("Contract address at reading directly -> ", process.env.REACT_APP_CONTRACT_ADDRESS);
-console.log("Contract address at reading -> ", contractAddress);
+const address = import.meta.env.VITE_CONTRACT_ADDRESS;
+const contractAddress = `${address}`;
+console.log("Contract address reading -> ", contractAddress);
 export default contractAddress;
