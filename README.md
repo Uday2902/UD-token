@@ -2,6 +2,8 @@
 
 Uday-Token (UD) is an ERC-20 compatible token deployed on the public test network Sepolia. This project includes a smart contract written in Solidity and a front-end integration using JavaScript and the ethers.js library. The primary functionalities of this project include token transfers, approvals, and an airdrop mechanism. Users can connect their MetaMask wallet to interact with the token.
 
+#### Live demo: [Click Here](https://udtoken.vercel.app/)
+
 ## Features
 
 - **Token Name:** Uday-Token
