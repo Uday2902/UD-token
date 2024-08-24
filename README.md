@@ -56,12 +56,12 @@ The front-end code is written in JavaScript using the ethers.js library for bloc
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Uday2902/UD-token.git
-   cd UD-token```
+   cd UD-token
 
 2. **Install dependencies:**
    ```bash
-   npm install```
+   npm install
    
 3. **Run the application:**
    ```bash
-   npm run dev```
+   npm run dev
