@@ -1,6 +1,7 @@
 import React from "react";
 import { setSelectedTab } from "../state/tabSlice";
 import { useDispatch } from "react-redux";
+import { Analytics } from "@vercel/analytics/react"
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ const Navbar = () => {
         <button onClick={() => handleSelection("all-transactions")}>
           All Transactions
         </button>
+        <Analytics />
       </div>
     </>
   );

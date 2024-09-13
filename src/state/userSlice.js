@@ -24,7 +24,7 @@ export const userSlice = createSlice({
             state.currentNetwork = action.payload.currentNetwork;
         }
     }
-})
+});
 
 
 export const { setSigner, setContract, setProvider, setCurrentNetwork } = userSlice.actions;

@@ -9,7 +9,7 @@ export const tabSlice = createSlice({
     initialState,
     reducers: {
         setSelectedTab: (state, action) => {
-            state.selectedTab = action.payload.selectedTab;
+            state.selectedTab = action.payload.selectedTab
         }
     }
 })
